@@ -1,0 +1,217 @@
+html {
+    height: 100%;
+    background-color: #413ef7;
+    scroll-behavior: smooth;
+
+}
+
+h1{
+    text-align: center;
+}
+
+nav {
+    background-color: #212121;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    font-family: system-ui;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #413ef7;
+    transition: color 0.3s;
+}
+
+.box {
+    position: relative;
+    display: inline-block;
+    width: 24%;
+    margin: 10px;
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s;
+
+}
+
+.box img:hover {
+    cursor: pointer;
+    filter: opacity(20%);
+
+}
+
+.box .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.box:hover .overlay {
+    opacity: 1;
+}
+
+body {
+    margin-top: 60px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.topDivSection {
+    display: flex;
+    padding: 156px;
+    width: 100%;
+    background-color: #212121;
+    gap: 40px;
+    border-bottom-style: groove;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.goodVsBadSection {
+    border-bottom-style: groove;
+    width: 48dvw;
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+
+.quickLinkBoxes {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow {
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.scrollToLearnMoreSection {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    height: 43vh;
+    display: flex;
+    padding: 148px;
+    font-weight: bolder;
+    border-bottom-style: groove;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top-style: groove;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.leftSideExample {
+    padding: 28px;
+    background-color: #212121;
+    color: white; display: flex; gap: 20px;
+}
+
+.rightSideExample {
+    padding: 28px;
+    background-color: #212121;
+    color: white; display: flex; gap: 20px;     
+    flex-direction: row-reverse;
+}
+
+.websiteDescriptionExample {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+/* Im using an external site to use my logos for the social media links https://ionic.io/ionicons */
+ion-icon {
+    color: white;
+}
+
+#overlappingBtn {
+    position: fixed;
+    bottom: 2vh;
+    width: 13vw;
+    padding: 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0px 3px 20px 0px #626262;
+    font-size: 16px;
+    z-index: 9999;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#overlappingBtn:hover {
+    background-color: #0d8de2;
+}

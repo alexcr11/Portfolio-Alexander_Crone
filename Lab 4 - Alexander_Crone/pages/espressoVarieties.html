@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html style="background-color: #353535; padding: 35px;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Espresso Varieties</title>
+    <style>
+        .section {
+            display: flex;
+            align-items: center;
+            max-width: 56vw;
+        }
+
+        .center-container {
+            gap: 40px;
+            min-height: 40vh;
+        }
+
+        .top-section {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-style: inset;
+            background-color: #353535;
+            border-radius: 20px;
+            max-width: 56vw;
+        }
+
+        .top-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            padding-top: 0;
+        }
+
+        .top-image {
+            max-width: 24vw;
+            max-height: 79vh;
+            outline-style: outset;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-heading">
+        <h1>
+            ☕️ Espresso Varieties ☕️
+        </h1>
+    </header>
+    <div style="display: flex;
+    justify-content: center;">
+        <div class="navbar">
+            <a href="../../portfolio.html">Return to Portfolio</a>
+            <a href="index.html">The Art of Espresso Brewing</a>
+            <a href="espressoVarieties.html">Espresso Varieties</a>
+            <a>About</a>
+            <a>Contact</a>
+        </div>
+    </div>
+    <div class="top-container">
+        <div class="image-container">
+            <img src="../resources/a.jpg" alt="Espresso Brewing Techniques" class="top-image">
+        </div>
+        <div class="top-section">
+            <h2>Espresso, a beloved coffee beverage, is not only a global favorite but also subject to
+                diverse brewing
+                techniques and cultural interpretations. In this section, we'll embark on a journey to explore how
+                espresso
+                is
+                brewed and enjoyed around the world. Each region brings its unique twist to the art of espresso
+                preparation.
+            </h2>
+        </div>
+    </div>
+
+    <!-- Italian Espresso Section -->
+    <div class="center-container">
+        <section id="section1" class="section">
+            <div class="image-container">
+                <img src="../resources/cappuccino_loves_italy.jpg" alt="Espresso Brewing Techniques"
+                    style="max-width: 30vw; max-height: 20vh; outline-style: outset;">
+            </div>
+            <div>
+                <h2>Italian Espresso</h2>
+                <p>
+                    Italian espresso, known for its bold and robust flavor, is a timeless classic in the world of
+                    coffee. It's meticulously brewed using finely ground, top-quality coffee beans and a high-pressure
+                    espresso machine.
+                </p>
+                <p>
+                    The result is a small but potent shot of coffee, traditionally served in small cups. Italian
+                    espresso culture embodies the art of crafting this concentrated brew with precision, reflecting
+                    Italy's deep passion for coffee.
+                </p>
+            </div>
+        </section>
+
+        <!-- Spanish Café con Leche Section -->
+        <section id="section2" class="section">
+            <div class="image-container">
+                <img src="../resources/Spanish-Coffee-051.webp" alt="Espresso Brewing Techniques"
+                    style="max-width: 30vw; max-height: 20vh; outline-style: outset;">
+            </div>
+            <div>
+                <h2>Spanish Café con Leche</h2>
+                <p>
+                    Café con Leche, a beloved Spanish coffee, combines the rich flavor of espresso with the creamy
+                    embrace of steamed milk. This harmonious blend creates a coffee experience like no other, often
+                    savored as a breakfast treat.
+                </p>
+                <p>
+                    The preparation involves equal parts of espresso and steamed milk, resulting in a balanced and
+                    comforting beverage. Café con Leche pairs wonderfully with pastries or churros, making it a
+                    cherished part of Spanish culinary culture.
+                </p>
+            </div>
+        </section>
+
+        <!-- Turkish Coffee Section -->
+        <section id="section3" class="section">
+            <div class="image-container">
+                <img src="../resources/turkish-coffee-recipe-2355497-hero-02-b14bd83fe6114322af9d8040801e8391.jpg"
+                    alt="Espresso Brewing Techniques" style="max-width: 30vw; max-height: 20vh; outline-style: outset;">
+            </div>
+            <div>
+                <h2>Turkish Coffee</h2>
+                <p>
+                    Turkish coffee stands out for its unique brewing method. Finely ground coffee is simmered in water
+                    with sugar and aromatic cardamom, creating an unfiltered, intense coffee experience that's steeped
+                    in tradition.
+                </p>
+                <p>
+                    This coffee is traditionally served in small cups, and what makes it truly distinctive is the
+                    grounds that settle at the bottom, allowing for fortune telling—a fascinating part of Turkish coffee
+                    culture. Each cup is a journey into history and storytelling.
+                </p>
+            </div>
+        </section>
+
+        <!-- Vietnamese Egg Coffee Section -->
+        <section id="section4" class="section">
+            <div class="image-container">
+                <img src="../resources/DistrictOne_EspressoMartini_1.webp" alt="Espresso Brewing Techniques"
+                    style="max-width: 30vw; max-height: 20vh; outline-style: outset;">
+            </div>
+            <div>
+                <h2>Vietnamese Egg Coffee</h2>
+                <p>
+                    Vietnamese Egg Coffee is a delightful fusion of strong Vietnamese coffee and a luscious, sweet egg
+                    yolk foam. The result is a unique and indulgent coffee experience that combines the best of both
+                    worlds—sweetness and boldness.
+                </p>
+                <p>
+                    Crafting the perfect egg yolk foam requires skill and patience. When sipping Vietnamese Egg Coffee,
+                    you'll discover the delightful contrast between the velvety foam and the robust coffee, making it a
+                    must-try for coffee enthusiasts.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <button id="overlappingBtn">Return to Portfolio</button>
+    </div>
+
+    <script>
+        document.getElementById("overlappingBtn").addEventListener("click", function () {
+            // Redirect to another HTML page
+            window.location.href = "../../portfolio.html";
+        });
+    </script>
+    
+</body>
+<footer class="footer">
+    <p>Follow Us on Social Media for Coffee Inspiration ☕️</p>
+    <ul class="social-links">
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://www.twitter.com/">Twitter</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+    </ul>
+    <p>&copy; 2023 Espresso Enthusiast</p>
+</footer>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .main {
+            display: flex;
+            padding: 20px;
+            gap: 40px;
+        }
+
+        .descriptionBox {
+            border: 1px solid #333;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        p {
+            color: #555;
+        }
+
+        #overlappingBtn {
+            position: fixed;
+            bottom: 2vh;
+            width: 13vw;
+            padding: 15px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 14px;
+            text-align: center;
+            box-shadow: 0px 3px 20px 0px #626262;
+            font-size: 16px;
+            z-index: 9999;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        #overlappingBtn:hover {
+            background-color: #0d8de2;
+        }
+    </style>
+</head>
+
+<body class="main">
+    <div class="descriptionBox">
+        <h1>HTML</h1>
+        <p>HTML is like the backbone of the web. It's the language that structures the content of web pages. With HTML,
+            you get to define headings, paragraphs, links, images, and more. It's pretty much like creating the skeleton
+            of a webpage, which is kind of cool!</p>
+        <p>You'll start using tags like &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, and &lt;p&gt; to organize content.
+            It's not exactly a programming language, but it's the very first step in becoming a web developer. Exciting,
+            right?</p>
+    </div>
+    <div class="descriptionBox">
+        <h1>HTML5</h1>
+        <p>HTML5 is like the hip big brother of HTML. It's the latest version and brings some really awesome features to
+            the web. You can do cool things like embedding videos and audio directly into your webpage, which is pretty
+            amazing!</p>
+        <p>But the coolest part is the &lt;canvas&gt; element. It lets you draw graphics right on your webpage, and
+            there are also improved form controls to make user interactions smoother. HTML5 is kind of like the future
+            of the web - it's all about enhancing the user experience.</p>
+    </div>
+    <div class="descriptionBox">
+        <h1>CSS</h1>
+        <p>CSS is like the fashion designer for your webpage. It's all about making things look good and stylish. With
+            CSS, you can change colors, fonts, layouts, and even add some fancy animations. It's like having a palette
+            of colors and brushes for web designers!</p>
+        <p>Imagine starting with a plain webpage. CSS is the tool that can transform it into something amazing. You can
+            make text bold, give buttons a pop of color, and arrange elements neatly. CSS adds that 'wow' factor that
+            makes websites look polished and professional.</p>
+    </div>
+    <button id="overlappingBtn">Return to Portfolio</button>
+
+    <script>
+        document.getElementById("overlappingBtn").addEventListener("click", function () {
+            // Redirect to another HTML page
+            window.location.href = "../portfolio.html";
+        });
+    </script>
+</body>
+
+</html>
