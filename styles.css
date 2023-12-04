@@ -191,7 +191,7 @@ a:hover {
     flex-wrap: wrap;
     align-items: center;
     backdrop-filter: brightness(0.5);
-    background-image: url(./images/Untitled.png);
+    background-image: url(./images/background.png);
     padding: 65px;
     background-attachment: fixed;
     box-shadow: 5px 9px 10px 0px #222222;
