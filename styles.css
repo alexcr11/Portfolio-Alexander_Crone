@@ -242,7 +242,7 @@ a:hover {
 .heroSection,
 .aboutSection {
     backdrop-filter: brightness(0.5);
-    background-image: url(./images/Untitled.png);
+    background-image: url(./images/background.png);
     background-attachment: fixed;
     padding: 17px;
     max-width: 47dvw;
