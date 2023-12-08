@@ -1,8 +1,11 @@
 html {
     height: 100%;
-    background-color: #413ef7;
+    background-color: #850f0f;
     scroll-behavior: smooth;
+}
 
+.html2 {
+    background-color: darkslateblue;
 }
 
 h1{
@@ -26,6 +29,33 @@ nav {
     font-family: system-ui;
     font-size: 40px;
     font-weight: bolder;
+}
+
+#overlappingBtn {
+    position: fixed;
+    bottom: 2vh;
+    width: 13vw;
+    padding: 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0px 3px 20px 0px #626262;
+    font-size: 16px;
+    z-index: 9999;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#overlappingBtn:hover {
+    background-color: #0d8de2;
+}
+
+@media only screen and (max-width: 600px) {
+    #overlappingBtn {
+        width: 42vw;
+    }
 }
 
 .nav li {
@@ -117,7 +147,7 @@ body {
 }
 
 .quickLinkBoxes {
-    display: flex;
+    display: block;
     justify-content: center;
 }
 
@@ -171,6 +201,14 @@ footer {
     height: 30px;
 }
 
+.mobileDevelopmentInfo {
+    padding: 28px;
+    background-color: #212121;
+    color: white; 
+    display: flex; 
+    gap: 20px;
+}
+
 .leftSideExample {
     padding: 28px;
     background-color: #212121;
@@ -190,34 +228,100 @@ footer {
     justify-content: center;
     gap: 20px;
 }
+
+.exmaplePicture {
+    width: 45dvw;
+    height: 40dvh
+}
 /* Im using an external site to use my logos for the social media links https://ionic.io/ionicons */
 ion-icon {
     color: white;
 }
 
-#overlappingBtn {
-    position: fixed;
-    bottom: 2vh;
-    width: 13vw;
-    padding: 15px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 14px;
-    text-align: center;
-    box-shadow: 0px 3px 20px 0px #626262;
-    font-size: 16px;
-    z-index: 9999;
-    cursor: pointer;
-    transition: .3s;
+.dropdown-arrow {
+    display: none;
 }
 
-#overlappingBtn:hover {
-    background-color: #0d8de2;
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: 20px; /* Adjust the spacing as needed */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: rgb(131, 131, 131);
 }
 
 @media only screen and (max-width: 600px) {
-    #overlappingBtn {
-        width: 42vw;
+
+    .box {
+        width: 85vw;
+    }
+    .scrollToLearnMoreSection {
+        height: 40vh;
+        padding: 40px;
+    }
+
+    .exmaplePicture {
+        width: 85dvw;
+        height: 20dvh;
+    }
+    .goodVsBadSection {
+        width: 70dvw;
+        font-weight: 600;
+        font-size: xx-large;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .topDivSection {
+        padding: 79px;
+    }
+    .logo {
+        font-size: 30px;
+    }
+    
+    .leftSideExample {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightSideExample {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quickLinkBoxes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-toggle {
+        cursor: pointer;
+    }
+
+    .dropdown-toggle .dropdown-arrow {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown-toggle.active .dropdown-arrow {
+        transform: rotate(180deg);
     }
 }

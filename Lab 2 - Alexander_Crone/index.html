@@ -2,6 +2,8 @@
 <html style="background-color: #9b825d; padding: 35px;">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         /* Style for the navigation bar */
         .navbar {
@@ -45,6 +47,12 @@
         #overlappingBtn:hover {
             background-color: #0d8de2;
         }
+
+        @media only screen and (max-width: 600px) {
+            #overlappingBtn {
+                width: 42vw;
+            }
+        }
     </style>
 </head>
 
@@ -60,7 +68,6 @@
         </h1>
     </header>
     <div class="navbar">
-        <a href="../portfolio.html">Return to Portfolio</a>
         <a href="#section1">Introduction</a>
         <a href="#section2">Brewing Process</a>
         <a href="#section3">Perfecting Espresso</a>
@@ -205,7 +212,7 @@
     <script>
         document.getElementById("overlappingBtn").addEventListener("click", function () {
             // Redirect to another HTML page
-            window.location.href = "../portfolio.html";
+            window.location.href = "../index.html";
         });
     </script>
 </body>

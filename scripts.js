@@ -37,3 +37,37 @@ document.querySelectorAll('a').forEach((link) => {
         cursorOutline.classList.remove('expanded');
     });
 });
+
+// JavaScript
+const navToggle = document.querySelector('.navToggle');
+const hamburger = document.getElementById('hamburger');
+
+function toggleNav() {
+    navToggle.classList.toggle('show-nav');
+}
+
+function closeNav() {
+    navToggle.classList.remove('show-nav');
+}
+
+function handleClick(event) {
+    event.preventDefault();
+    toggleNav();
+}
+
+// Add event listener for click on hamburger
+hamburger.addEventListener('click', handleClick);
+
+// Check viewport width and close nav if it's not in mobile view
+function checkViewportWidth() {
+    if (window.innerWidth >= 768) {
+        closeNav();
+    }
+}
+
+// Add event listener for window resize
+window.addEventListener('resize', checkViewportWidth);
+
+// Call checkViewportWidth initially to handle the initial state
+checkViewportWidth();
+

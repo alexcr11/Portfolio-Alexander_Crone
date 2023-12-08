@@ -8,6 +8,7 @@ body {
     color: white;
     scroll-behavior: smooth;
     cursor: none;
+    user-select: none;
 }
 
 .topOfPageName {
@@ -34,6 +35,7 @@ body {
     justify-content: space-between;
     align-items: center;
     color: #fff;
+    box-shadow: 0px -12px 15px 12px rgb(188 136 199);
     padding: 20px;
     border-bottom-style: solid;
     border-bottom-color: rgb(188 136 199);
@@ -66,7 +68,7 @@ body {
     position: absolute;
     width: 100%;
     height: 3px;
-    background: rgb(137, 31, 158);
+    background: rgb(188, 136, 199) ;
     border-radius: 5px;
     left: 0;
     transform-origin: right;
@@ -101,16 +103,12 @@ body {
 
 .cursor-dot.expanded {
     width: 10px;
-    /* Adjust the expanded size as needed */
     height: 10px;
-    /* Adjust the expanded size as needed */
 }
 
 .cursor-outline.expanded {
     width: 40px;
-    /* Adjust the expanded size as needed */
     height: 40px;
-    /* Adjust the expanded size as needed */
 }
 
 .navigation a:hover::after {
@@ -139,6 +137,8 @@ footer {
 
 p {
     text-align: justify;
+    white-space: pre-line;
+
 }
 
 .footer-content p {
@@ -168,7 +168,7 @@ ion-icon {
 }
 
 .top-section {
-    font-size: xx-large;
+    font-size: x-large;
     max-width: 47vw;
     text-align: justify;
     font-family: math;
@@ -185,13 +185,31 @@ a:hover {
     color: #c0c0c0;
 }
 
+a img:hover {
+    box-shadow: 5px 1px 20px 5px rgb(188 136 199);
+    transition: .4s;
+}
+
+.navToggle{
+    display: none;
+}
+
+.navToggle {
+    position: sticky;
+    padding: 20px;
+    text-align: center;
+    height: 30%;
+    background-color: #272727;
+}
+
 .quickLinkBoxes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     backdrop-filter: brightness(0.5);
-    background-image: url(./images/background.png);
+    justify-content: space-around;
+    background-image: url(./images/blob.png);
     padding: 65px;
     background-attachment: fixed;
     box-shadow: 5px 9px 10px 0px #222222;
@@ -202,33 +220,39 @@ a:hover {
 .box {
     position: relative;
     display: inline-block;
-    width: 24%;
+    width: 23%;
     margin: 10px;
-    text-align: center;
 }
 
 .box img {
-    width: 100%;
+    width: 19dvw;
     height: auto;
-    transition: filter 0.3s;
-
+    transition: filter 0.4s;
+    border-radius: 10px;
 }
 
 .box img:hover {
-    filter: opacity(20%);
-
+    filter: opacity(80%);
 }
 
 .box .overlay {
     position: absolute;
+    width: 20vw;
     top: 50%;
     left: 50%;
+    font-size: small;
     transform: translate(-50%, -50%);
     color: white;
-    padding: 10px;
+    padding: 22px;
     opacity: 0;
     transition: opacity 0.3s;
     pointer-events: none;
+}
+
+.box .overlay p {
+    max-width: 100%;
+    white-space: pre-wrap;
+    margin: 0;
 }
 
 .hamburger {
@@ -242,7 +266,7 @@ a:hover {
 .heroSection,
 .aboutSection {
     backdrop-filter: brightness(0.5);
-    background-image: url(./images/background.png);
+    background-image: url(./images/blob.png);
     background-attachment: fixed;
     padding: 17px;
     max-width: 47dvw;
@@ -250,21 +274,63 @@ a:hover {
     border-radius: 20px;
 }
 
+.labBox {
+    width: 20vw;
+    backdrop-filter: brightness(0.5);
+    background-image: url(./images/blob.png);
+    background-attachment: fixed;
+    box-shadow: 5px 9px 10px 0px #222222;
+    border-radius: 20px;
+}
+
+.labBoxSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.labBoxDescription {
+    padding: 20px;
+    padding-top: 0;
+}
+
+@media only screen and (max-width: 1500px) {
+    .labBox {
+        width: 29dvw;
+    }
+
+    .box img {
+        width: 27.6vw;
+    }
+}
+
 @media only screen and (max-width: 900px) {
+    .labBox {
+        width: 100%;
+    }
+
+    .box img {
+        width: 91vw;
+    }
+
+    .labBoxSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .nav-links {
         display: none;
-        /* Hide the navigation links by default on small screens */
     }
 
     .hamburger {
         display: block;
-        /* Display the hamburger icon on small screens */
     }
 
     .social-icons,
     .nav-links {
         display: none;
-        /* Align social icons vertically on small screens */
     }
 
     .top-section {
@@ -275,13 +341,29 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+    .labBox {
+        width: 100%;
+    }
+
+    .box img {
+        width: 84vw;
+    }
+
+    .labBoxSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topOfPageName {
+        font-size: smaller;
+    }
+
     .nav-content {
         display: flex;
         padding: 20px;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
-        padding-bottom: 0;
         gap: 45px
     }
 
@@ -311,7 +393,6 @@ a:hover {
     .social-icons,
     .nav-links {
         display: none;
-        /* Align social icons vertically on small screens */
     }
 
     .cursor-dot,
@@ -322,5 +403,21 @@ a:hover {
     .heroSection,
     .aboutSection {
         max-width: fit-content;
+    }
+
+    .navToggle {
+        display: none;
+        position: sticky;
+        padding: 20px;
+        text-align: center;
+        height: 30%;
+        background-color: #272727;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .show-nav {
+        display: flex;
     }
 }
