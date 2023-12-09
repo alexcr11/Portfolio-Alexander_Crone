@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Page</title>
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <nav class="navigation">
+        <div class="nav-content">
+            <div id="topOfPage" class="topOfPageName">
+                <h1>
+                    Alexander Crone's Portfolio
+                </h1>
+            </div>
+            <a href="#" class="hamburger" id="hamburger">&#9776;</a>
+
+            <ul class="social-icons">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+                <ul class="nav-links">
+                    <li><a href="/index.html#about">About Me</a></li>
+                </ul>
+                <ul class="nav-links">
+                    <li><a href="/index.html#labExamples">My Work</a></li>
+                </ul>
+                <ul class="nav-links">
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+                <li><a title="Facebook" href="https://www.facebook.com/"><ion-icon size="large"
+                            name="logo-facebook"></ion-icon></a></li>
+                <li><a title="Twitter" href="https://twitter.com/"><ion-icon size="large"
+                            name="logo-twitter"></ion-icon></a></li>
+                <li><a title="Instagram" href="https://www.instagram.com/"><ion-icon size="large"
+                            name="logo-instagram"></ion-icon></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="navToggle">
+        <a href="index.html">Home</a>
+        <a href="/index.html#about">About Me</a>
+        <a href="#labExamples">My Work</a>
+        <a href="contact.html">Contact Me</a>
+        <a title="Facebook" href="https://www.facebook.com/"><ion-icon size="large" name="logo-facebook"></ion-icon></a>
+        <a title="Twitter" href="https://twitter.com/"><ion-icon size="large" name="logo-twitter"></ion-icon></a>
+        <a title="Instagram" href="https://www.instagram.com/"><ion-icon size="large"
+                name="logo-instagram"></ion-icon></a>
+    </div>
+    <main style="display: flex;
+    height: 80%;
+    justify-content: center;
+    align-items: center;">
+        <div style="display: flex;
+        width: 44vw;
+        height: 60vh;
+        border-radius: 20px;
+        align-items: center;
+        flex-direction: column;
+        background-color: #161616;
+        justify-content: center;">
+            <div>
+            <input type="text" id="fullName" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Full Name" required /><br />
+            <input type="text" id="email_id" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Email Id" required /><br />
+            <textarea id="message" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Message" required></textarea><br />
+            <button style="background-color: #4CAF50; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;" onclick="SendMail()">Send</button>
+        </div>
+        </div>
+    </main>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scripts.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("QRh6YIem7EcgQnZzv");
+   })();
+</script>
+
+</html>
