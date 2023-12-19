@@ -1,0 +1,414 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navigation {
+    padding: 13px;
+    display: flex;
+    box-shadow: 1px 1px 20px 2px #cfcfcf;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0093ff;
+    border-bottom-style: solid;
+    border-color: #fff300;
+}
+
+.sendButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff300;
+    color: #0093ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.sendButton:hover {
+    background-color: #0093ff;
+    color: white;
+}
+
+.textArea {
+    height: 100px;
+
+}
+
+input,
+.textArea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-color: #0093ff;
+    border-top-color: #fff300;
+    border-top-style: solid;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.navLinks {
+    gap: 20px;
+    display: flex;
+    font-weight: 500;
+}
+
+div a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+    transition: 0.3s;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgb(202, 202, 202);
+}
+
+h1 {
+    margin: 0;
+}
+
+.youthHealthImg {
+    height: 24vh;
+    width: 35vw;
+    display: flex;
+    align-items: flex-start;
+}
+
+.heroSectionDescription {
+    width: 30vw;
+    background-color: #0093ff;
+    box-shadow: 0px 6px 20px 7px #dddddd;
+    padding: 23px;
+    color: white;
+    display: flex;
+    border-radius: 14px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-section {
+    width: 14vw
+}
+
+.featured-article {
+    background-color: #0093ff;
+    color: #ffffff;
+    padding: 80px;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.featured-article article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.featured-article h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.featured-article h3 {
+    font-size: 1.5em;
+    color: #fff300;
+    /* Added color for h3 */
+    margin-bottom: 10px;
+}
+
+.featured-article p {
+    line-height: 1.5;
+}
+
+.featured-article a,
+.content-section a {
+    display: inline-block;
+    background-color: #fff300;
+    color: #0093ff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Add this to your CSS file or style section */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: max-content;
+    background-color: #0093ff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.1s;
+}
+
+.dropdown-content a:hover {
+    color: rgb(202, 202, 202);
+    border-bottom: #fff300;
+    border-bottom-style: solid;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hero-Section {
+    height: 90%;
+    display: flex;
+    padding: 90px;
+    flex-direction: column;
+    padding-top: 29px;
+    justify-content: space-evenly;
+}
+
+.hero-container {
+    width: 36vw;
+    background-color: #0093ff;
+    color: white;
+    display: flex;
+    gap: 20px;
+    font-size: larger;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 45px;
+    flex-direction: column;
+}
+
+.main-home {
+    padding: 150px;
+    padding-top: 0;
+}
+
+.main-home-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.moreArticlesSection {
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+.moreArticlesContainer {
+    display: flex;
+    gap: 4vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.featured-article-picture {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-picture {
+    width: 14vw;
+}
+
+.title {
+    display: flex;
+    font-size: medium;
+    flex-direction: column;
+    color: white;
+}
+
+.article-content-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 30vw;
+}
+
+.article-content-section h2 {
+    color: #0093ff;
+}
+
+.article-content-section h3 {
+    color: #0093ff;
+}
+
+.article-content-section p {
+    line-height: 1.6;
+}
+
+.article-main-content {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.article-picture-size {
+    width: 20vw;
+}
+
+.contact-container h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.contact-container {
+    padding: 30px;
+    border-radius: 8px;
+    width: 80vw;
+    max-width: 600px;
+    background-color: #0093ff;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .member-picture {
+        width: 30vw;
+    }
+
+    .article-picture-size {
+        width: 60vw;
+    }
+
+    .article-content-section {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        width: auto;
+    }
+
+    .main-home {
+        padding: 33px;
+        padding-top: 0;
+    }
+
+    .hero-picture {
+        width: 80vw;
+    }
+
+    .hero-Section {
+        align-items: center;
+    }
+
+    .hero-container {
+        width: 55vw;
+    }
+
+    .featured-article {
+        background-color: #0093ff;
+        color: #ffffff;
+        padding: 21px;
+        display: flex;
+        width: 71vw;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .main-home-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .moreArticlesSection {
+        padding: 40px;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .moreArticlesContainer {
+        display: flex;
+        gap: 4vw;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .featured-article-picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-section {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-picture {
+        width: 45vw;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .navLinks {
+        gap: 12px;
+        display: flex;
+        font-weight: 500;
+        flex-wrap: wrap;
+    }
+}

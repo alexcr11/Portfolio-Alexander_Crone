@@ -306,7 +306,7 @@ a img:hover {
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     .labBox {
         width: 100%;
     }
@@ -419,5 +419,6 @@ a img:hover {
 
     .show-nav {
         display: flex;
+        box-shadow: inset 0px 0px 20px 0px black;
     }
 }
