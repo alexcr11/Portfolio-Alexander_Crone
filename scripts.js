@@ -49,7 +49,7 @@ function SendMail() {
 
 window.addEventListener('scroll', function() {
     var scrollButton = document.getElementById('scrollButton');
-    if (window.pageYOffset > 0) {
+    if (window.pageYOffset > 100) {
         scrollButton.style.display = "block";
 
     } else {

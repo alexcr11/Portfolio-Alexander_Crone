@@ -38,10 +38,10 @@ body {
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    box-shadow: 0px -12px 15px 12px rgb(188 136 199);
+    box-shadow: 0px -12px 15px 12px rgb(116 26 215);
     padding: 20px;
     border-bottom-style: solid;
-    border-bottom-color: rgb(188 136 199);
+    border-bottom-color: rgb(116 26 215);
 }
 
 .nav-links {
@@ -334,9 +334,20 @@ h3 {
         max-width: 91vw;
         font-family: math;
     }
+
+    .imageStyle {
+        max-width: 70vw;
+    }
+
+    .show-nav {
+        display: flex;
+        box-shadow: inset 0px 0px 20px 0px black;
+        flex-direction: column;
+
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .labBox {
         width: 100%;
     }
