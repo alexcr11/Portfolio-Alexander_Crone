@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Contact Page</title>
 </head>
 
 <body>
-    <div class="cursor-dot" data-cursor-dot></div>
-    <div class="cursor-outline" data-cursor-outline></div>
     <nav class="navigation">
         <div class="nav-content">
             <div id="topOfPage" class="topOfPageName">
@@ -66,24 +65,31 @@
         background-color: #161616;
         justify-content: center;">
             <div>
-            <input type="text" id="fullName" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Full Name" required /><br />
-            <input type="text" id="email_id" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Email Id" required /><br />
-            <textarea id="message" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;" placeholder="Message" required></textarea><br />
-            <button style="background-color: #4CAF50; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;" onclick="SendMail()">Send</button>
-        </div>
+                <input type="text" id="fullName"
+                    style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;"
+                    placeholder="Full Name" required /><br />
+                <input type="text" id="email_id"
+                    style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;"
+                    placeholder="Email Id" required /><br />
+                <textarea id="message"
+                    style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px;"
+                    placeholder="Message" required></textarea><br />
+                <button
+                    style="background-color: #4CAF50; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;"
+                    onclick="SendMail()">Send</button>
+            </div>
         </div>
     </main>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="scripts.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="scripts.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
 <script type="text/javascript">
-   (function(){
-      emailjs.init("QRh6YIem7EcgQnZzv");
-   })();
+    (function () {
+        emailjs.init("QRh6YIem7EcgQnZzv");
+    })();
 </script>
 
 </html>

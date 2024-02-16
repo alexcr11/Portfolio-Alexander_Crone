@@ -5,16 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Alexander Crone's Portfolio</title>
 </head>
 
 <body>
-    <div class="cursor-dot" data-cursor-dot></div>
-    <div class="cursor-outline" data-cursor-outline></div>
-
-    <nav class="navigation">
+    <nav id="topOfPage" class="navigation">
         <div class="nav-content">
-            <div id="topOfPage" class="topOfPageName">
+            <div class="topOfPageName">
                 <h1>
                     Alexander Crone's Portfolio
                 </h1>
@@ -55,6 +53,11 @@
                 name="logo-instagram"></ion-icon></a>
     </div>
     <main>
+        <div>
+            <a id="scrollButton" class="material-symbols-outlined" href="#topOfPage">
+                arrow_upward
+            </a>
+        </div>
         <div class="heroSection">
             <div>
                 <h1>Exploring My Journey in Web Development</h1>
@@ -279,7 +282,8 @@
                 </div>
                 <div class="labBoxDescription">
                     <h3>Semester Project</h3>
-                    In my semester project, I designed a sleek login/homepage screen featuring a responsive login menu using
+                    In my semester project, I designed a sleek login/homepage screen featuring a responsive login menu
+                    using
                     JavaScript.
                     The screen not only looks neat but also adapts seamlessly to different devices.
                     I added functionality, allowing users to access different pop-ups for actions like "Forgot Password"
@@ -288,10 +292,11 @@
                 </div>
             </div>
         </div>
+        
     </main>
     <footer id="socialMediaSection">
         <div class="footer-content">
-            <a href="#topOfPage">Scroll To Top</a>
+            <a>Thanks for visiting my portfolio site :)</a>
         </div>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
